@@ -1,0 +1,57 @@
+.main{
+    margin: 0 auto;
+    width: 1200px;
+    padding-bottom: 20px;
+}
+.main-title{
+    text-align: center;
+    margin: 0;
+    padding-bottom: 30px;
+    color: #0080008f;
+    font-family: cursive;
+    letter-spacing: 9px;
+}
+.main-list{
+    list-style: none;
+    margin: 0;
+    padding: 20px 0 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-item{
+    text-align: center;
+}
+.main-img{
+    width: 270px;
+    border-radius: 20px;
+    transform: scale(1);
+    transition: 1s;
+}
+.main-img:hover{
+    transform: scale(0.9);
+    transition: 1s;
+    cursor: pointer;
+}
+.main-price{
+    font-weight: 700;
+    color: green;
+}
+.main-button{
+    font-size: 18px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+    background: #689a1b;
+    border: none;
+    transition: all 0.3s ease 0s;
+}
+.main-button:hover{
+    background: green;
+}
+.main-part{
+    background: #8ec038;
+    background-image: url(https://healthyfood.ee/wp-content/uploads/2019/10/veg_pattern_01.png?id=10839) !important;
+    padding: 15px;
+    border-radius: 30px;
+}
