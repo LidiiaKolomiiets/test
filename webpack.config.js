@@ -18,18 +18,17 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name][fullhash].css'
         }),
-        new CopyPlugin ({
-             patterns: [
-                 {from : "static", to: "static"}
-             ]
-         })
     ],
     devServer: {
-        port: 5551,
+        port: 5557,
         static: {
             directory: path.join(__dirname, 'dist')
         },
-        historyApiFallback: true
+        historyApiFallback: true,
+        watchFiles: 'src/**/*',
+        devMiddleware: {
+            writeToDisk: true
+        },
     },
     module: {
         rules: [
@@ -66,7 +65,7 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader, "css-loader"],
             },
             {
-                test: /\.(png|jpg|jpeg|gif|svg)$/,
+                test: /\.(png|jpg|jpeg|gif|svg|avif)$/,
                 use: [
                   {
                     loader: 'file-loader',

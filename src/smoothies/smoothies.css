@@ -1,0 +1,52 @@
+.smoothies{
+    margin: 0 auto;
+    width: 1200px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.conteiner{
+    position: relative;
+}
+.title{
+    font-size: 30px;
+    color: rgb(17, 75, 17);
+}
+.block-ingredient{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.title-ingredient{
+    margin: 0;
+    font-size: 25px;
+}
+.img-ingredient{
+    border-radius: 160px;
+    border: 1px solid;
+    width: 190px;
+    height: 190px;
+    box-shadow: 0px 0px 25px green;
+    margin-bottom: 15px;
+}
+.button-ing{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.list-ingredient{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.ingredient{
+    margin: 0;
+    padding-bottom: 20px;
+}
+.item-ingredient{
+    display: flex;
+    justify-content: space-between;
+}

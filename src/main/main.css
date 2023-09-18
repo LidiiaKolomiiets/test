@@ -54,4 +54,15 @@
     background-image: url(https://healthyfood.ee/wp-content/uploads/2019/10/veg_pattern_01.png?id=10839) !important;
     padding: 15px;
     border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.main-text{
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 9px 9px 0px #f0f0f0;
+}
+.avocado{
+    width: 500px;
 }

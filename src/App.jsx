@@ -6,7 +6,7 @@ import Smoothies from "./smoothies/Smoothies.jsx"
 
 import { RouterProvider, createHashRouter,createBrowserRouter, Outlet } from "react-router-dom";
 
-const router = createHashRouter([{
+const router = createBrowserRouter([{
     path: '/',
     element: <>
         <Headers />
