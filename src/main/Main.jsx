@@ -1,36 +1,23 @@
 import React from "react";
+import { useSelector } from "react-redux/es/hooks/useSelector.js";
 
 
 import MainPart from "./MainPart.jsx";
 import './main.css';
-import img01 from './imageMain/image01.jpeg';
-import img02 from './imageMain/image.jpeg';
-import img03 from './imageMain/image03.jpg'
-
-const product = [
-{
-    name: 'Ягідний смузі',
-    image: img02,
-    price: '550 грн'
-},
-{
-    name: 'Смузі із манго',
-    image: img03,
-    price: '800 грн'
-},
-{
-    name: 'Банановий смузі',
-    image: img01,
-    price: '500 грн'
-}]
+import './imageMain/image01.jpeg';
+import './imageMain/image.jpeg';
+import './imageMain/image03.jpg'
 
 export default () => {
+    const salesProduct = useSelector(state => state.sales)
+
+
     return <main className="main">
         <h1 className="main-title">Акційні смузі</h1>
         <ul className="main-list">
-            {product.map((item, index) => {
+            {salesProduct.map((item, index) => {
                 return <li key={index} className="main-item">
-                    < img src={item.image} className="main-img" />
+                    <img src={item.image} className="main-img" />
                     <h2>{item.name}</h2>
                     <p className="main-price">{item.price}</p>
                     <button className="main-button">До корзини</button>

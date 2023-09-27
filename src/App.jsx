@@ -3,8 +3,10 @@ import React from "react";
 import Headers from './headers/Headers.jsx';
 import Main from './main/Main.jsx'
 import Smoothies from "./smoothies/Smoothies.jsx"
+import Basket from "./basket/Basket.jsx"
 
 import { RouterProvider, createHashRouter,createBrowserRouter, Outlet } from "react-router-dom";
+import About from "./about/About.jsx";
 
 const router = createBrowserRouter([{
     path: '/',
@@ -19,7 +21,16 @@ const router = createBrowserRouter([{
         {
             path: 'smoothies',
             element: <Smoothies />
-        }]
+        },
+        {
+            path: 'about',
+            element: <About />
+        },
+        {
+            path: 'basket',
+            element: <Basket />
+        }
+    ]
 },
 {
     path: '*',

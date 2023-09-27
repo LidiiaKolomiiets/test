@@ -1,0 +1,18 @@
+.about {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 20px 25px 20px;
+    background: #49d6188c;
+    background-image: url(https://healthyfood.ee/wp-content/uploads/2019/10/veg_pattern_01.png?id=10839) !important;
+    border-radius: 40px;
+}
+.about-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+}
+.about-image{
+    width: 100%;
+    border-radius: 40px;
+    opacity: 90%;
+}

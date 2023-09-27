@@ -43,3 +43,6 @@
     width: 100%;
     transition: width 0.3s ease-in-out;
 }
+.basket-icon{
+    width: 30px;
+}

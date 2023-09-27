@@ -1,0 +1,13 @@
+.basket-ingredient{
+    list-style: none;
+}
+.basket-item{
+    background: beige;
+    padding: 20px 40px 20px;
+    width: 200px;
+    list-style: none;
+    margin: 20px;
+}
+.basket-block{
+    display: flex;
+}
