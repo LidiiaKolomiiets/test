@@ -5,20 +5,6 @@ import basket from '../basket/imageBasket/basket-min.png'
 import NavItem from './NavItem.jsx';
 import './headers.css'
 
-/*const questions = []
-
-function fetchQuest() {
-  return fetch('/products', {
-
-  })
-      .then(response => response.json())
-      .then(result => questions.push(...result))
-
-}
-
-fetchQuest().then(() => console.log(questions))*/
-
-
 export default () => {
   return <header className="header">
     <img src={logo} alt="Моє зображення" />

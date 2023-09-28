@@ -32,3 +32,13 @@
     font-size: 14px;
     cursor: pointer;
 }
+.smoothies-modal{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    border: 3px solid #338b33;
+    text-align: center;
+    padding: 50px;
+    background: #5aff5ad6;
+}

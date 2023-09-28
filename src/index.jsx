@@ -21,7 +21,8 @@ const initialState = {
     sales: [],
     fruits: [],
     vegetables: [],
-    basket: []
+    basket: JSON.parse(localStorage.getItem('smoothies')) || [],
+    order: []
 }
 
 const store = createStore(reducer, initialState,applyMiddleware(thunk))
