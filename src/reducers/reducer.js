@@ -11,12 +11,12 @@ const reducer = (state = {}, action) => {
         }
         case 'addBasket': {
             const newBasket = [...state.basket, action.payload];
-           // localStorage.setItem('smoothies', JSON.stringify(newBasket));
+            localStorage.setItem('smoothies', JSON.stringify(newBasket));
 
             return { ...state, basket: newBasket };
         }
         case 'removeProduct': {
-            return { ...state, basket: [ ...state.basket.filter(p => p.id !== action.payload.id)]}
+            return { ...state, basket: [...state.basket.filter(p => p.id !== action.payload.id)] }
         }
         case 'addOrderForm': {
             return { ...state, order: [...state.order, action.payload] }
