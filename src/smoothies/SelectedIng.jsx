@@ -39,9 +39,6 @@ export default ({ data, onDataUpdate }) => {
     setSelectedVolume('1')
     setShowModal(true)
 
-   // const existingData = JSON.parse(localStorage.getItem('smoothies')) || [];
-    //existingData.push(newSmoothies);
-    //localStorage.setItem('smoothies', JSON.stringify(existingData));
   }
 
 

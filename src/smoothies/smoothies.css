@@ -50,6 +50,10 @@
     display: flex;
     justify-content: space-between;
 }
+.item-ingredient.disabled {
+    opacity: 0.5; /* Змініть прозорість за потребою */
+    pointer-events: none; /* Вимкнення подій для недоступних продуктів */
+  }
 .image{
     position: absolute;
     top: 30%;

@@ -56,7 +56,12 @@ export default () => {
           </button>
           {isFruitsDropDownOpen && <ol className="list-ingredient">
             {fruits.map((item, index) => {
-              return <li className="item-ingredient" key={index} onClick={() => productsSmoothies(item)}>
+              const isDisabled = !item.status;
+              const itemClassName = isDisabled ? "item-ingredient disabled" : "item-ingredient";
+              return <li
+                className={itemClassName}
+                key={index}
+                onClick={() => !isDisabled && productsSmoothies(item)}>
                 <h3 className="ingredient">{item.name}</h3>
                 <p className="ingredient">({item.price} грн / 1 літр)</p>
               </li>
@@ -69,11 +74,18 @@ export default () => {
           </button>
           {isVegetablesDropDownOpen && <ol className="list-ingredient">
             {vegetables.map((items, index) => {
-              return <li className="item-ingredient" key={index} onClick={() => productsSmoothies(items)}>
-                <h3 className="ingredient"> {items.name}</h3>
-                <p className="ingredient">({items.price} грн / 1 літр)</p>
-              </li>
-            })}</ol>}
+              const isDisabled = !items.status;
+              const itemClassName = isDisabled ? "item-ingredient disabled" : "item-ingredient";
+              return (
+                <li
+                  className={itemClassName}
+                  key={index}
+                  onClick={() => !isDisabled && productsSmoothies(items)}>
+                  <h3 className="ingredient"> {items.name}</h3>
+                  <p className="ingredient">({items.price} грн / 1 літр)</p>
+                </li>)
+            })}
+          </ol>}
         </div>
       </div>
       {image && <div>
