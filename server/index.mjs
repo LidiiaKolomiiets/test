@@ -37,6 +37,10 @@ server.get('/vegetables', (request, reply) => {
   return reply.send(vegetables)
 })
 
-server.listen({ port: 5557 })
+const port = process.env.PORT || 5557;
+const host = process.env.PORT || "localhost"
+
+
+server.listen({port, host})
   .then(() => console.log('Server started'))
   .catch((error) => console.log('Error'))
