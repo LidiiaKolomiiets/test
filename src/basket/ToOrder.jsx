@@ -30,10 +30,12 @@ export default ({sum}) => {
 
         }
         if (isValid(orderForm, craeteOrderForm(orderForm))) {
-            dispatch(craeteOrderForm(orderForm))
-            setInfoOrder(true)
-            setOrderForm(false)
+            dispatch(craeteOrderForm(orderForm));
+            setInfoOrder(true);
+            setOrderForm(false);
+            localStorage.clear();
         }
+        
     }
 
     return <> {orderForm && <form onSubmit={addOrderForm} className="order-form">
@@ -53,7 +55,7 @@ export default ({sum}) => {
                 type="text"
                 value={newNumber}
                 onChange={(e) => setNewNumber(e.target.value)}
-                placeholder="Номер телефона"
+                placeholder="+38 099 0000000"
                 id="tel" />
         </div>
         <div onChange={onChangeValue}>
@@ -72,7 +74,7 @@ export default ({sum}) => {
         </div>
         {showAdress && <div>
             <label className="order-label" htmlFor="adress">Адреса для відправки:</label>
-            <input type="text" id="adress" placeholder="Адреса" ></input>
+            <input type="text" id="adress" placeholder="Місто, вулиця, будинок" ></input>
         </div>}
         <button className="send-order" type="submit" value="Оформити" >Оформити</button>
     </form>}

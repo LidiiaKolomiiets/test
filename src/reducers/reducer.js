@@ -19,7 +19,7 @@ const reducer = (state = {}, action) => {
             return { ...state, basket: [...state.basket.filter(p => p.id !== action.payload.id)] }
         }
         case 'addOrderForm': {
-            return { ...state, order: [...state.order, action.payload] }
+            return { ...state, order: [action.payload] }
         }
         default: {
             return state
