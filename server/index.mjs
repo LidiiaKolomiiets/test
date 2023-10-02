@@ -38,7 +38,7 @@ server.get('/vegetables', (request, reply) => {
 })
 
 const port = process.env.PORT || 5557;
-const host = process.env.PORT || "localhost"
+const host = process.env.HOST || "localhost"
 
 
 server.listen({port, host})
